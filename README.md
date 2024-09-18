@@ -1,16 +1,7 @@
-# Simple nix VM for just anything
+# My NixOS VM
 
-As described in this [post](https://jeancharles.quillet.org/posts/2023-01-16-Basic-nix-vm-for-just-anything.html)
+Originally from [post](https://jeancharles.quillet.org/posts/2023-01-16-Basic-nix-vm-for-just-anything.html)
 
-Build with:
+`vm1` is for xfce desktop, `vm2` is for tty only.
 
-```bash
-$ nix build  ./#nixosConfigurations.vm.config.system.build.vm
-```
-
-Then run with:
-
-```bash
-$ ./result/bin/run-nixos-vm
-```
-
+Build and run by `just`, check the `justfile` for more details.
